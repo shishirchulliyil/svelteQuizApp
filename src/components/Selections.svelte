@@ -1,6 +1,16 @@
 <script>
+  import { createEventDispatcher } from "svelte";
+  import { ready } from "../store/selectionStore";
+  import { apiUrl } from "../store/urlStore";
+
+  const dispatch = createEventDispatcher();
+  let apiUrlConstant = "https://opentdb.com/api.php?amount=10&type=multiple";
   let categoryId = "9";
   let difficulty = "easy";
+  $: {
+    let apiUrlOptions = "&category=" + categoryId + "&difficulty=" + difficulty;
+    apiUrl.set(apiUrlConstant + apiUrlOptions);
+  }
 </script>
 
 <div class="container">
@@ -25,7 +35,9 @@
       <option value="hard">Hard</option>
     </select>
   </div>
-  <button class="btn"> I'm Ready!🚀</button>
+  <button class="btn" on:click={() => dispatch("userReady")}>
+    I'm Ready!🚀
+  </button>
 </div>
 
 <style>
