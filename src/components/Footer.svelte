@@ -15,9 +15,10 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 1rem;
+    gap: 0.4rem;
     color: #264653;
     font-size: 1rem;
     font-weight: 600;
+    margin-top: 2rem;
   }
 </style>
