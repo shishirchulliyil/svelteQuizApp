@@ -26,11 +26,11 @@
 
 <style>
   .quiz {
-    background-color: #edede9;
-    height: calc(100vh - 10rem);
+    height: calc(100vh - 12rem);
     width: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
 </style>

@@ -19,5 +19,6 @@
     color: #264653;
     font-size: 1rem;
     font-weight: 600;
+    margin-top: 2rem;
   }
 </style>
