@@ -11,4 +11,4 @@ SquizMee is a Svelte Quiz App
 
 ## Try it out 👇🏻
 
-grumpy-doctor.surge.sh
+https://grumpy-doctor.surge.sh
